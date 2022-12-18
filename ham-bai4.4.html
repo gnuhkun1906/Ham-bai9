@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="inputN" placeholder="Nhập vào bất kì">
+<button onclick="check()">Check</button>
+<br> <br>
+<p id="out"></p>
+<script>
+ function check(){
+     let N=document.getElementById('inputN').value;
+     let output=!isNaN(N)
+     if(isNaN(N)){
+         return document.getElementById('out').innerHTML=output
+     }else {
+         return document.getElementById('out').innerHTML=output
+     }
+ }
+
+</script>
+</body>
+</html>

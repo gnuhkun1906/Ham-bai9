@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <h1>Add New Product</h1>
+
+    <input type="text" id="" placeholder="New product" style="width: 400px">
+    <button onclick="" style="background-color:#78d00a"> Add</button>
+    <br>
+    <h2>Display All Product</h2>
+    <h4>Product Name</h4>
+</div>
+<table border="1px" style="border-collapse: collapse">
+    <tbody id="drawTable"></tbody>
+</table>
+<script>
+    let listProduct=['Sony Xperia','Samsung Galaxy','Nolkia 6','Xiaomi Redmi Note4','Apple Iphone 6S'];
+    function ShowlistProduct(){
+        let Table1="";
+        for (let i = 0; i <listProduct,length ; i++) {
+            Table1 += '<tr>'+listProduct[i]+'</tr>'
+        }
+        document.getElementById('drawTable').innerHTML=Table1;
+    }ShowlistProduct()
+</script>
+</body>
+</html>

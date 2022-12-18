@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="nhapVao" placeholder="Nhập vào số nguyên dương"><br> <br>
+<button type="button" onclick="TinhGiaiThua()">Change</button>
+<br> <br>
+<p id="resultt"></p>
+<script>
+
+    function checkGiaithua(number) {
+        let giaithua = 1;
+        for (let i = 1; i <= number; i++) {
+            giaithua *= i;
+        }
+        return giaithua
+    }
+
+    function TinhGiaiThua() {
+        let N = document.getElementById('nhapVao').value;
+        let output = checkGiaithua(N);
+        document.getElementById('resultt').innerHTML = 'Giai thừa :   '+output;
+        console.log(output)
+    }
+
+
+</script>
+</body>
+</html>

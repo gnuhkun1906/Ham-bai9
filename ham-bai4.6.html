@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="inputSND" type="number">
+<button onclick="kiemTra()">Check</button>
+<br> <br>
+<p id="output"></p>
+<script>
+
+  function checksonguyenduong(a){
+    if(a>0){
+      return true
+    }if(a<0){
+      return  false
+    }
+  }
+  function kiemTra() {
+    let SND = document.getElementById('inputSND').value;
+   let Kq=checksonguyenduong(SND)
+    document.getElementById('output').innerHTML=Kq;
+  }
+
+
+</script>
+</body>
+</html>

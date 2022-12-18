@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="input" placeholder="Nhập bán kính hình tròn">
+<button onclick="result1()">Result</button>
+<br> <br>
+<label>Chu vi hình tròn: </label>
+<p id="chuVi"></p><br> <br>
+<label>Diện tichs hình tròn: </label>
+<p id="dienTich"></p>
+<script>
+    // let Radius=+prompt('Nhập vào bán kính:')
+    // const PI=Math.PI;
+    // function dienTich(){
+    //   let dientich=Radius*Radius*PI;
+    //   alert('Diện tích là: '+dientich)
+    // }dienTich()
+    // function chuVi(){
+    //   let chuvi=2*Radius*PI;
+    //   alert('Chu vi là: '+chuvi)
+    // }chuVi()
+
+    function chuvi(x) {
+        const PI = Math.PI;
+        let chuviradius = 2 * x * PI;
+        return chuviradius;
+    }
+
+    function dientich(y) {
+        const PI = Math.PI;
+        let dientichradius = y * y * PI;
+        return dientichradius;
+    }
+
+    function result1() {
+        let Radius = +document.getElementById('input').value;
+        let Chuvi = chuvi(Radius);
+        document.getElementById('chuVi').innerHTML = Chuvi
+        let Dientich = dientich(Radius);
+        document.getElementById('dienTich').innerHTML = Dientich
+        console.log(Chuvi, Dientich)
+    }
+
+</script>
+</body>
+</html>
